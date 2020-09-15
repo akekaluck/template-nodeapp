@@ -1,0 +1,26 @@
+{
+  "name": "mqtt2influxdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=12.13"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "start": "node -r dotenv/config .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/pino": "^6.3.0",
+    "dotenv": "^8.2.0",
+    "mqtt": "^4.1.0",
+    "pino": "^6.4.1"
+  }
+}
