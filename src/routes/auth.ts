@@ -2,7 +2,6 @@ import { Router } from 'express';
 import { registerValidation, loginValidation } from '../validation';
 import { genSalt, hash, compare } from 'bcrypt';
 import * as jwt from 'jsonwebtoken';
-import { verifyToken } from '../middlewares';
 
 export const AuthRouter = Router();
 
