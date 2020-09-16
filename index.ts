@@ -1,5 +1,6 @@
 import * as pino from 'pino';
 import * as express from 'express';
+import { App } from './src/app';
 
 const logger = pino({
     name: 'app-name',
@@ -7,6 +8,6 @@ const logger = pino({
 });
 
 logger.info(`start ${process.env.SERVER}`);
-
-const app = express();
-app.listen(3000, () => logger.info('ServerUp and running 3'));
+        
+const app = App(express(), logger);
+app.listen(3000, () => logger.info('ServerUp and running'));
